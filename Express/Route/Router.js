@@ -4,9 +4,12 @@ let func = require("../Logics_function/Controller")
 let express = require("express");
 let Route = express.Router();
 //Define Routes
-Route.get("/",func.index)
+Route.get("/",func.Home)
 Route.get("/a",func.About)
-Route.get("/c",func.Contact)
+Route.get("/b",func.Contact)
+Route.get("/c",func.Help)
+Route.get("/d",func.Service)
+Route.get("/e",func.PrivacyPolicy)
 
 
 
