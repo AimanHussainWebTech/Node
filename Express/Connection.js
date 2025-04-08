@@ -6,7 +6,7 @@ require("dotenv").config();
     mongo.connect(db).then(()=>{
         console.log("Connected to MongoDB")
     }).catch((e)=>{
-        console.log("Error connecting to MongoDB")
+        console.log(e)
     })
  }
  module.exports = db_func;
