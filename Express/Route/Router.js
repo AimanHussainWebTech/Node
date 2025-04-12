@@ -11,6 +11,9 @@ Route.get("/c",func.Help)
 Route.get("/d",func.Service)
 Route.get("/e",func.PrivacyPolicy)
 
+// post route
+Route.post("/save" , func.save_data)
+
 
 
 module.exports = Route;

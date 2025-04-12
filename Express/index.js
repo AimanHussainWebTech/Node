@@ -50,12 +50,14 @@ let add_Health = async function () {
 };
 
 let myapp = exp();
+myapp.use(exp.json())
 myapp.use("/aiman/", ro);
+
 db()
   .then(() => {
-    add_data();
-    add_person();
-    add_Health();
+    // add_data();
+    // add_person();
+    // add_Health();
     myapp.listen(process.env.PORT, () => {
       console.log(`server is started at http://localhost:${process.env.PORT} `);
     });
